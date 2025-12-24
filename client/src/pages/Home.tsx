@@ -199,21 +199,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Clients Section */}
-        <section className="py-20 bg-white border-y border-slate-100">
-          <div className="container mx-auto px-4 md:px-6">
-            <p className="text-center text-slate-400 font-medium tracking-widest text-sm uppercase mb-12">Trusted by Leading European Brands</p>
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 items-center justify-items-center opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
-              {/* Abstract company logos using text for placeholder representation */}
-              <span className="font-display font-bold text-2xl text-slate-800">NORDIC</span>
-              <span className="font-display font-bold text-2xl text-slate-800">SAVOY</span>
-              <span className="font-display font-bold text-2xl text-slate-800">ROYAL</span>
-              <span className="font-display font-bold text-2xl text-slate-800">ATLAS</span>
-              <span className="font-display font-bold text-2xl text-slate-800">EDEN</span>
-            </div>
-          </div>
-        </section>
-
         {/* Process Section */}
         <section id="process" className="py-24 bg-slate-900 text-white">
           <div className="container mx-auto px-4 md:px-6">
