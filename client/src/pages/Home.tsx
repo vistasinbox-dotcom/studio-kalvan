@@ -245,6 +245,67 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Team Section */}
+        <section id="team" className="py-24 bg-white">
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="text-center max-w-3xl mx-auto mb-20">
+              <span className="text-primary font-bold tracking-widest text-sm uppercase mb-4 block">Our Team</span>
+              <h2 className="text-4xl md:text-5xl font-display font-bold mb-6 text-slate-900">Meet the Minds Behind Kalvan</h2>
+              <p className="text-lg text-slate-600 leading-relaxed">
+                A dedicated team of strategists and creatives passionate about delivering exceptional digital experiences for European hospitality brands.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+              {/* Team Member 1 - Founder */}
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                className="text-center group"
+              >
+                <div className="mb-8 relative">
+                  <div className="w-40 h-40 mx-auto rounded-2xl overflow-hidden shadow-lg">
+                    <img 
+                      src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=500&h=500&auto=format&fit=crop"
+                      alt="Founder"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                </div>
+                <h3 className="text-2xl font-display font-bold text-slate-900 mb-2">You</h3>
+                <p className="text-primary font-semibold mb-4">Founder & Strategic Director</p>
+                <p className="text-slate-600 leading-relaxed">
+                  Visionary leader with deep expertise in digital strategy and hospitality sector insights. Guides the studio's strategic direction and client relationships.
+                </p>
+              </motion.div>
+
+              {/* Team Member 2 - Designer */}
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+                className="text-center group"
+              >
+                <div className="mb-8 relative">
+                  <div className="w-40 h-40 mx-auto rounded-2xl overflow-hidden shadow-lg">
+                    <img 
+                      src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=500&h=500&auto=format&fit=crop"
+                      alt="Designer"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                </div>
+                <h3 className="text-2xl font-display font-bold text-slate-900 mb-2">Your Designer</h3>
+                <p className="text-primary font-semibold mb-4">Creative Director & Design Lead</p>
+                <p className="text-slate-600 leading-relaxed">
+                  Award-winning designer specializing in luxury brand experiences. Creates visually stunning designs that elevate hospitality properties.
+                </p>
+              </motion.div>
+            </div>
+          </div>
+        </section>
+
         {/* CTA & Contact Section */}
         <section id="contact" className="py-24 bg-gradient-to-br from-blue-50 to-white relative overflow-hidden">
           <div className="absolute top-0 right-0 w-1/2 h-full bg-blue-100/50 -skew-x-12 translate-x-1/4 pointer-events-none" />
