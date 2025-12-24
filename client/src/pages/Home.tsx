@@ -104,7 +104,7 @@ export default function Home() {
             <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
               <div className="max-w-2xl">
                 <span className="text-primary font-bold tracking-widest text-sm uppercase mb-4 block">Selected Works</span>
-                <h2 className="text-4xl md:text-5xl font-display font-bold text-slate-900">Digital Craftsmanship</h2>
+                <h2 className="text-4xl md:text-5xl font-display font-bold text-slate-900">Selected Concepts</h2>
               </div>
               <Button variant="outline" className="rounded-full border-slate-300" asChild>
                 <a href="#">View All Projects</a>
