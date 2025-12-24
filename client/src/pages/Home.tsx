@@ -55,7 +55,7 @@ export default function Home() {
                   <div className="w-14 h-14 rounded-2xl bg-blue-50 flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform duration-300">
                     <BedDouble className="w-7 h-7" />
                   </div>
-                  <h3 className="text-2xl font-display font-bold mb-3">Premium Hotels</h3>
+                  <h3 className="text-2xl font-display font-bold mb-3">Hotels</h3>
                   <p className="text-slate-600 mb-6 leading-relaxed">
                     Stunning digital experiences that showcase your property's premium positioning and drive direct bookings.
                   </p>
