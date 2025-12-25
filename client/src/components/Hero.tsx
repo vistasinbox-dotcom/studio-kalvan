@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { RIEK } from "@attently/riek";
 
 export function Hero() {
   return (
@@ -22,9 +23,7 @@ export function Hero() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="max-w-4xl mx-auto"
         >
-          <span className="inline-block py-1 px-3 rounded-full bg-white/10 border border-white/20 text-white/80 text-sm font-medium tracking-wide mb-8 backdrop-blur-sm">
-            EST. 2024 • EUROPEAN EXCELLENCE
-          </span>
+          
           
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold text-white mb-8 leading-[1.1]">
             Premium Digital Experiences for Hospitality

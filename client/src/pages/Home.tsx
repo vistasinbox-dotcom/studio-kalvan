@@ -252,12 +252,12 @@ export default function Home() {
                 <div className="mb-8 relative">
                   <div className="w-40 h-40 mx-auto rounded-2xl overflow-hidden shadow-lg">
                     <img 
-                      src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=500&h=500&auto=format&fit=crop"
+                      src="/team/founder.jpg"
                       alt="Founder"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
-                </div>
+                </div>    
                 <h3 className="text-2xl font-display font-bold text-slate-900 mb-2">You</h3>
                 <p className="text-primary font-semibold mb-4">Founder & Strategic Director</p>
                 <p className="text-slate-600 leading-relaxed">
@@ -275,7 +275,7 @@ export default function Home() {
                 <div className="mb-8 relative">
                   <div className="w-40 h-40 mx-auto rounded-2xl overflow-hidden shadow-lg">
                     <img 
-                      src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=500&h=500&auto=format&fit=crop"
+                      src="\team\designer.PNG"
                       alt="Designer"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
