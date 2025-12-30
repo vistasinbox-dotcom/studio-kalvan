@@ -1,37 +1,39 @@
-import type { VercelRequest, VercelResponse } from "@vercel/node";
 import { Resend } from "resend";
 
-export default async function handler(
-  req: VercelRequest,
-  res: VercelResponse
-) {
+export default async function handler(req: any, res: any) {
   try {
     if (req.method !== "POST") {
       return res.status(405).json({ message: "Method Not Allowed" });
     }
 
-    const { name, email, message } = req.body ?? {};
+    const body = req.body || {};
+    const name = body.name;
+    const email = body.email;
+    const message = body.message;
 
     if (!name || !email || !message) {
       return res.status(400).json({ message: "Missing fields" });
     }
 
-    if (!process.env.RESEND_API_KEY) {
+    const RESEND_API_KEY = process.env.RESEND_API_KEY;
+    const CONTACT_TO_EMAIL = process.env.CONTACT_TO_EMAIL;
+
+    if (!RESEND_API_KEY) {
       console.error("RESEND_API_KEY missing");
       return res.status(500).json({ message: "Server misconfigured" });
     }
 
-    if (!process.env.CONTACT_TO_EMAIL) {
+    if (!CONTACT_TO_EMAIL) {
       console.error("CONTACT_TO_EMAIL missing");
       return res.status(500).json({ message: "Server misconfigured" });
     }
 
-    const resend = new Resend(process.env.RESEND_API_KEY);
+    const resend = new Resend(RESEND_API_KEY);
 
     const result = await resend.emails.send({
       from: "Kalvan <onboarding@resend.dev>",
-      to: [process.env.CONTACT_TO_EMAIL],
-      subject: `New inquiry from ${name}`,
+      to: [CONTACT_TO_EMAIL],
+      subject: `New contact from ${name}`,
       text: `Name: ${name}\nEmail: ${email}\n\n${message}`,
     });
 
@@ -42,7 +44,7 @@ export default async function handler(
 
     return res.status(200).json({ ok: true });
   } catch (err) {
-    console.error("Contact handler crash:", err);
+    console.error("Contact API crash:", err);
     return res.status(500).json({ message: "Internal Server Error" });
   }
 }
