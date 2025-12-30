@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
-import { RIEK } from "@attently/riek";
+import { ArrowRight } from "lucide-react";  
 
 export function Hero() {
   return (
