@@ -47,9 +47,9 @@ export function Footer() {
           <div>
             <h4 className="font-bold text-lg mb-6">Contact</h4>
             <ul className="space-y-4 text-slate-400">
-              <li>London, UK</li>
+              <li>Warsaw, PL</li>
               <li>contact@kalvanworks.com</li>
-              <li>+44 (0) 20 7123 4567</li>
+              <li></li>
             </ul>
           </div>
         </div>

@@ -355,7 +355,7 @@ export default function Home() {
                     />
                   </div>
                 </div>
-                <h3 className="text-2xl font-display font-bold text-slate-900 mb-2">You</h3>
+                <h3 className="text-2xl font-display font-bold text-slate-900 mb-2">Herman Kalvan</h3>
                 <p className="text-primary font-semibold mb-4">
                   Founder & Strategic Director
                 </p>
@@ -374,14 +374,14 @@ export default function Home() {
                 <div className="mb-8 relative">
                   <div className="w-40 h-40 mx-auto rounded-2xl overflow-hidden shadow-lg">
                     <img
-                      src="\team\designer.PNG"
+                      src="\team\abs.png"
                       alt="Designer"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
                 </div>
                 <h3 className="text-2xl font-display font-bold text-slate-900 mb-2">
-                  Your Designer
+                  Kasey Azarova
                 </h3>
                 <p className="text-primary font-semibold mb-4">
                   Creative Director & Design Lead
